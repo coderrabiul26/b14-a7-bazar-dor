@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Noto_Serif_Bengali } from "next/font/google";
 import "./globals.css";
 import Header from "@/component/Header";
 import Marquee from "@/component/Marquee";
+import { Toaster } from "react-hot-toast";
 
 const notoSerifFont = Noto_Serif_Bengali({
   subsets: ["latin","bengali"],
@@ -24,6 +25,8 @@ export default function RootLayout({ children }) {
         <main className="container mx-auto">
         {children}
         </main>
+
+         <Toaster/>
         
       </body>
     </html>

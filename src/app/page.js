@@ -6,11 +6,11 @@ import React from 'react';
 const HomePage = async() => {
   const res = await fetch(`${baseUrl}/api/bazardor/products`);
   const products = await res.json();
-  console.log(products);
+  // console.log(products);
 
 
   const downProducts=products.filter((product)=>product.change.dir=='down').sort((a,b)=>b.change.pct-a.change.pct).slice(0,6)
-  console.log(downProducts);
+  // console.log(downProducts);
 
 
    const upProducts=products.filter((product)=>product.change.dir=='up').sort((a,b)=>b.change.pct-a.change.pct).slice(0,6)

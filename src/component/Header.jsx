@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Navlinks from "./Navlinks";
+import Userinfo from "./Userinfo";
 
 
 const Header = () => {
@@ -24,12 +25,7 @@ const Header = () => {
         </div>
       </div>
       <div className="flex items-center">
-            <button className="btn btn-outline border-none mr-3 p-3">
-              সাইন ইন
-            </button>
-            <button className="btn btn-error bg-red-700 text-white py-1 px-3 rounded-md">
-              সাইন আপ
-            </button>
+            <Userinfo></Userinfo>
           </div>
     </div>
     <Navlinks></Navlinks>

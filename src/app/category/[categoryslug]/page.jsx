@@ -19,7 +19,7 @@ const CategoryPage = async ({ params }) => {
     (category) => category.slug === categoryslug,
   );
 
-  console.log(currentCategory);
+  // console.log(currentCategory);
 
   const toBengaliNumber = (number) => {
     const bengaliDigits = "০১২৩৪৫৬৭৮৯";
