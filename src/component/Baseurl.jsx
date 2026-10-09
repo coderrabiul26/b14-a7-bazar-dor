@@ -1,2 +1,2 @@
-const baseUrl='https://api.abcz.workers.dev'
+const baseUrl='https://api.api-store.workers.dev'
 export default baseUrl
