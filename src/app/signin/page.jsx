@@ -22,11 +22,10 @@ const SignInPage = () => {
     if(data){
       toast.success('Logged in successfully')
       redirect('/')
-      console.log(data);
+  
     }
     if(error){
       toast.error(`${error.message}`)
-      console.log(error);
     } 
   };
   const handleGoogleSignIn=async()=>{
