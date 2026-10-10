@@ -15,6 +15,7 @@ const ProductCard = ({ product }) => {
   
 
   return (
+    
     <Link href={`/detail/${product.id}`}>
         <div className="w-full max-w-md rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
       {/* Product Info */}
@@ -39,7 +40,7 @@ const ProductCard = ({ product }) => {
           {/* Percentage Change */}
           <div
             className={`flex items-center gap-1 text-lg font-bold bg-gray-100 rounded-full py-1 px-2 ${
-              isUp ? "text-red-500" :isDown? "text-green-500":''
+              isUp ? "text-red-500" :isDown? "text-green-500":'text-gray-500'
             }`}
           >
             <span className="text-2xl">{isUp ? "↑" :isDown? "↓":'-'}</span>

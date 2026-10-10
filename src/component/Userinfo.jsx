@@ -19,7 +19,11 @@ const Userinfo = () => {
     <div>
       {user ? (
         <div className="flex gap-4 items-center">
-          <h1>Welcome! <span className="text-black-500 font-bold text-2xl">{user.name}</span></h1>
+           <Link href={'/profile'}>
+           <Button className="bg-green-500">
+              প্রোফাইল 
+            </Button>
+            </Link>
           <Button onClick={handleSignOut} className='bg-red-500'>সাইন আউট</Button>
         </div>
       ) : (

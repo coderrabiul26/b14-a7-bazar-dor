@@ -38,6 +38,7 @@ const Navlinks = () => {
                     </Link>
                 );
             })}
+    
         </div>
     );
 };

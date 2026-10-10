@@ -24,7 +24,7 @@ const Marquee = async () => {
 
               <span>{product.nameBn}</span>
 
-              <span>৳{toBengaliNumber(product.today)}/কেজি</span>
+              <span>৳{toBengaliNumber(product.today)}/{product.unit}</span>
 
               {product.change.dir === "up" ? (
                 <span className="flex items-center gap-1 text-red-500">

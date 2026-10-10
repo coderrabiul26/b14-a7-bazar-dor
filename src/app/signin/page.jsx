@@ -34,6 +34,11 @@ const SignInPage = () => {
       provider:'google'
     })
   }
+  const handleGithubSignIn=async()=>{
+    const data=await signIn.social({
+      provider:'github'
+    })
+  }
   
     return (
         <div className='container mx-auto flex flex-col items-center h-screen mt-10'>
@@ -85,16 +90,20 @@ const SignInPage = () => {
           <Check />
           Login
         </Button>
-        <Link href={'/signup'}>
-            <Button variant="secondary">
+        <div>
+          <Link href={'/signup'}>
+            <span className="text-gray-400 mr-2">haven't account? </span><Button variant="secondary">
             Register
         </Button>
         </Link>
-        <Button onClick={handleGoogleSignIn} className='bg-violet-500'>Sign in with google</Button>
+        </div>
+       
       </div>
+       <Button onClick={handleGoogleSignIn} className='bg-violet-500 w-full'>Sign in with google</Button>
+       <Button onClick={handleGithubSignIn} className='bg-violet-500 w-full'>Sign in with github</Button>
     </Form>
     
-        </div>
+    </div>
         
     );
 };

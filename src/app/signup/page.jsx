@@ -170,20 +170,19 @@ Registration Form </h1>
       </Button>
 
       <Link href="/signin">
-        <Button type="button" variant="secondary">
+        <span className="text-gray-400 mr-2">Already have account?</span> <Button type="button" variant="secondary">
           Login
         </Button>
       </Link>
-
-      <Button
+    </div>
+    <Button
         type="button"
         onClick={handleGoogleSignIn}
         isDisabled={isGoogleLoading}
-        className="bg-violet-500"
+        className="bg-violet-500 w-full"
       >
         {isGoogleLoading ? "Redirecting..." : "Sign in with Google"}
       </Button>
-    </div>
   </Form>
 </div>
 

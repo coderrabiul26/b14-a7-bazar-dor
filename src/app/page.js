@@ -25,7 +25,7 @@ const HomePage = async() => {
   };
  
   return (
-    <div>
+    <div className='mb-10'>
       <Banner></Banner>
       {/* up products */}
       <h2 className='text-2xl font-bold my-5 '><span className='text-red-500 font-bold mr-1'>↑</span>আজ দাম বেড়েছে</h2>
@@ -33,7 +33,7 @@ const HomePage = async() => {
         {upProducts.map(product=><ProductCard key={product.id} product={product}></ProductCard>)}
       </div>
       {/* down products  */}
-      <h2 className='text-2xl font-bold my-5 '><span className='text-red-500 font-bold mr-1'>↑</span>আজ দাম কমেছে</h2>
+      <h2 className='text-2xl font-bold my-5 '><span className='text-green-500 font-bold mr-1'>↓</span>আজ দাম কমেছে</h2>
       <div className='grid grid-cols-4 gap-3 justify-between'>
         {downProducts.map(product=><ProductCard key={product.id} product={product}></ProductCard>)}
       </div>
