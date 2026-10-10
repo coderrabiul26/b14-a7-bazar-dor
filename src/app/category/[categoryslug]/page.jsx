@@ -69,10 +69,6 @@ const CategoryPage = async ({ params }) => {
       </div>
 
       <CategoryProductList products={categoryProducts} />
-
-      {/* <span className="text-gray-400">
-        {`মোট ${toBengaliNumber(categoryProducts.length)} টি পণ্য দেখানো হচ্ছে`}
-      </span> */}
     </div>
   );
 };

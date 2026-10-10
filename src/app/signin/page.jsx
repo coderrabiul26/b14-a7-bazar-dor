@@ -99,7 +99,7 @@ const SignInPage = () => {
        
       </div>
        <Button onClick={handleGoogleSignIn} className='bg-violet-500 w-full'>Sign in with google</Button>
-       <Button onClick={handleGithubSignIn} className='bg-violet-500 w-full'>Sign in with github</Button>
+       <Button onClick={handleGithubSignIn} className='bg-gray-700 w-full'>Sign in with github</Button>
     </Form>
     
     </div>

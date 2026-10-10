@@ -1,5 +1,8 @@
+'use client'
+import { useSession } from "@/lib/auth-client";
 import Link from "next/link";
 import React from "react";
+import toast from "react-hot-toast";
 
 const ProductCard = ({ product }) => {
   const toBengaliNumber = (number) => {
@@ -12,11 +15,23 @@ const ProductCard = ({ product }) => {
 
   const isUp = product.change.dir === "up";
   const isDown = product.change.dir === "down";
+
+  const { data: session, isPending } = useSession();
   
 
   return (
     
-    <Link href={`/detail/${product.id}`}>
+    <Link href={`/detail/${product.id}`} onClick={(e) => {
+    if (isPending || !session) {
+      e.preventDefault();
+
+      if (isPending) {
+        toast.loading("অপেক্ষা করুন...", { id: "auth-check" });
+      } else {
+        toast.error("বিস্তারিত দেখতে প্রথমে লগইন করুন!");
+      }
+    }
+  }}>
         <div className="w-full max-w-md rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
       {/* Product Info */}
       <div className="flex items-center gap-3">
@@ -50,6 +65,7 @@ const ProductCard = ({ product }) => {
         </div>
       </div>
     </div>
+    
     </Link>
   );
 };

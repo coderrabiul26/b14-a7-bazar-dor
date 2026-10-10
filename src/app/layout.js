@@ -20,10 +20,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${notoSerifFont.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-screen flex flex-col">
         <Header></Header>
         <Marquee></Marquee>
-        <main className="bg-[#f1f2f6]">
+        <main className="bg-[#f1f2f6] flex-1">
           <div className="container mx-auto">
             {children}
           </div>
