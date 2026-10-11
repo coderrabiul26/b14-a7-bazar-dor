@@ -17,9 +17,9 @@ const ProfilePage = () => {
             <h1 className="text-gray-400">আপনার অ্যাকাউন্টের তথ্য এখানে দেখুন</h1>
         </div>
         <div className="bg-[#c2ecee] rounded-lg p-3 text-md sm:text-xl">
-            <h1>Name: <span className="text-lg sm:text-2xl font-bold text-blue-800 ml-2">{user?.name}</span></h1>
-            <h1>Email address: <span className="text-lg sm:text-2xl font-bold text-blue-800 ml-2">{user?.email}</span></h1>
-            <h1>ID no: <span className="text-lg sm:text-2xl font-bold text-blue-800 ml-2">{user?.id}</span></h1>
+            <h1>Name: <span className="text-md sm:text-2xl font-bold text-blue-800 ml-1">{user?.name}</span></h1>
+            <h1>Email: <span className="text-md sm:text-2xl font-bold text-blue-800 ml-1">{user?.email}</span></h1>
+            <h1>ID no: <span className="text-md sm:text-2xl font-bold text-blue-800 ml-1">{user?.id}</span></h1>
         </div>
         
         <Link href={'/profile-update'} >
