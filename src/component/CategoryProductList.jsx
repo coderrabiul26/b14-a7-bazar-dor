@@ -68,17 +68,17 @@ const CategoryProductList = ({ products }) => {
               stroke="currentColor"
               strokeWidth="2"
             >
-              <path d="m6 9 6 6 6-6" />
+              <path d="m6 9 6 6 6-6"/>
             </svg>
           </span>
         </div>
       </div>
 
-      <span className="text-gray-400 block mt-3">
+      <span className="text-gray-400 block mt-3 px-2 sm:px-0">
         {`মোট ${toBengaliNumber(safeProducts.length)} টি পণ্য দেখানো হচ্ছে`}
       </span>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-2 px-2 sm:px-0">
         {sortedProducts.map((product) => (
           <ProductCard
             key={product.id}

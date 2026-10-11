@@ -11,7 +11,7 @@ const Header = () => {
   return (
    <div>
          <div className="flex justify-between container mx-auto py-4 px-2">
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-1 sm:gap-3">
         <Image
           src={"/logo-icon.png"}
           width={45}
@@ -20,8 +20,8 @@ const Header = () => {
           className="bg-green-500 rounded-lg p-3"
         ></Image>
         <div>
-          <h1 className="text-xl sm:text-2xl font-bold">বাজার দর</h1>
-          {date}
+          <h1 className="text-lg sm:text-2xl font-bold">বাজার দর</h1>
+          <span className="text-sm">{date}</span>
         </div>
       </div>
       <div className="flex items-center">

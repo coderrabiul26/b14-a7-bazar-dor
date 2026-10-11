@@ -12,7 +12,7 @@ const Banner = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 border border-gray-200 rounded-lg py-4 px-2'>
             <div className='flex-1'>
-                <span className='text-green-500 bg-gray-100 font-bold py-1 px-2 rounded-lg'>{date}</span>
+                <span className='text-green-500 bg-gray-100 font-bold py-1 rounded-lg'>{date}</span>
                 <h1 className='text-3xl font-bold mb-10 mt-3'>আজকের বাজারের দাম এক নজরে</h1>
                 <p>চাল, ডাল, তেল, সবজি, মাছ, মাংস, ডিম ও মসলার দাম — বাজারভিত্তিক বিস্তারিত, গড়, সর্বনিম্ন-সর্বাধিক এবং দামের পরিবর্তন এক জায়গায়।</p>
                 <Link href='#allProduct'>

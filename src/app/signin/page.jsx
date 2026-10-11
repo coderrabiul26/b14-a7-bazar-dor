@@ -42,7 +42,7 @@ const SignInPage = () => {
     return (
         <div className='container mx-auto flex flex-col items-center h-screen mt-10'>
            
-        <Form className="flex w-96 flex-col gap-4" onSubmit={onSubmit}>
+        <Form className="flex w-96 flex-col gap-4 px-2 sm:px-0" onSubmit={onSubmit}>
             <h1 className="text-center bg-gray-100 rounded-lg py-2 px-3">Login Form</h1>
       
       <TextField

@@ -18,7 +18,7 @@ const Userinfo = () => {
   return (
     <div>
       {user ? (
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-1 sm:gap-4 items-center">
            <Link href={'/profile'}>
            <Button className="bg-green-500">
               প্রোফাইল 
@@ -28,13 +28,16 @@ const Userinfo = () => {
         </div>
       ) : (
         <div>
-          <div >
+          <div>
             <Link href={'/signin'}><button className="btn btn-outline border-none mr-3">
               সাইন ইন
-            </button></Link>
+            </button>
+            </Link>
+
             <Link href={'/signup'}><button className="btn btn-error bg-green-500 text-white py-1 px-3 rounded-full">
               সাইন আপ
-            </button></Link>
+            </button>
+            </Link>
           </div>
         </div>
       )}
