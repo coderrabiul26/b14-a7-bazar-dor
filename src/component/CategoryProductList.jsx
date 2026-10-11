@@ -78,7 +78,7 @@ const CategoryProductList = ({ products }) => {
         {`মোট ${toBengaliNumber(safeProducts.length)} টি পণ্য দেখানো হচ্ছে`}
       </span>
 
-      <div className="grid grid-cols-4 gap-3 mt-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-2">
         {sortedProducts.map((product) => (
           <ProductCard
             key={product.id}

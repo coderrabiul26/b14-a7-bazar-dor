@@ -20,7 +20,7 @@ const ProfileUpdatePage = () => {
   };
 
     return (
-        <div className='flex flex-col max-w-120 h-screen mx-auto mt-25 rounded-lg'>
+        <div className='flex flex-col max-w-80 sm:max-w-120 md:max-w-200 h-screen mx-auto mt-25 rounded-lg'>
             <div className="bg-[#c2ecee] rounded-lg p-3">
                  <h1 className="text-xl font-bold">তথ্য</h1>
             <Form className="flex flex-col gap-4" onSubmit={onSubmit}>

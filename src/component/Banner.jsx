@@ -10,7 +10,7 @@ const Banner = () => {
 
 
     return (
-        <div className='grid grid-cols-2 border border-gray-200 rounded-lg py-4 px-2'>
+        <div className='grid grid-cols-1 md:grid-cols-2 border border-gray-200 rounded-lg py-4 px-2'>
             <div className='flex-1'>
                 <span className='text-green-500 bg-gray-100 font-bold py-1 px-2 rounded-lg'>{date}</span>
                 <h1 className='text-3xl font-bold mb-10 mt-3'>আজকের বাজারের দাম এক নজরে</h1>
@@ -19,7 +19,7 @@ const Banner = () => {
                     <Button className='bg-green-500 rounded-lg text-white py-1 px-3 mt-10'>সব পণ্য দেখুন</Button>
                 </Link>
             </div>
-            <div className='justify-self-end'>
+            <div className='mx-auto md:justify-self-end'>
                 <Image src={'/bazar-hero.png'} width={400} height={400} alt='hero-image'></Image>
             </div>
             

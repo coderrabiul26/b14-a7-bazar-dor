@@ -27,18 +27,18 @@ const HomePage = async() => {
       <Banner></Banner>
       {/* up products */}
       <h2 className='text-2xl font-bold my-5 '><span className='text-red-500 font-bold mr-1'>↑</span>আজ দাম বেড়েছে</h2>
-      <div className='grid grid-cols-4 gap-3 justify-between'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 justify-between'>
         {upProducts.map(product=><ProductCard key={product.id} product={product}></ProductCard>)}
       </div>
       {/* down products  */}
       <h2 className='text-2xl font-bold my-5 '><span className='text-green-500 font-bold mr-1'>↓</span>আজ দাম কমেছে</h2>
-      <div className='grid grid-cols-4 gap-3 justify-between'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 justify-between'>
         {downProducts.map(product=><ProductCard key={product.id} product={product}></ProductCard>)}
       </div>
       {/* all products */}
        <h2 className='text-2xl font-bold mt-5 '>সব পণ্য</h2>
        <p className='text-gray-500 mb-4'>{`মোট ${toBengaliNumber(products.length)} টি পণ্য দেখানো হচ্ছে`}</p>
-      <div id='allProduct' className='grid grid-cols-4 gap-3 justify-between'>
+      <div id='allProduct' className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 justify-between'>
         {products.map(product=><ProductCard key={product.id} product={product}></ProductCard>)}
       </div>
     </div>
