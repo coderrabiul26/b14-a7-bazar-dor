@@ -165,13 +165,13 @@ Registration Form </h1>
     </TextField>
 
     <div className="flex gap-2 justify-between items-center flex-wrap">
-      <Button type="submit" isDisabled={isSubmitting}>
+      <Button type="submit" isDisabled={isSubmitting} className='px-1 sm:px-3'>
         <Check />
         {isSubmitting ? "Registering..." : "Register"}
       </Button>
 
       <Link href="/signin">
-        <span className="text-gray-400 mr-2">Already have account?</span> <Button type="button" variant="secondary">
+        <span className="text-gray-400 mr-1 sm:mr-2 text-sm sm:text-md">Already have account?</span> <Button type="button" variant="secondary">
           Login
         </Button>
       </Link>

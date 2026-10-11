@@ -37,7 +37,7 @@ const HomePage = async() => {
       </div>
       {/* all products */}
        <h2 className='text-2xl font-bold mt-5 px-2 sm:px-0 '>সব পণ্য</h2>
-       <p className='text-gray-500 mb-4'>{`মোট ${toBengaliNumber(products.length)} টি পণ্য দেখানো হচ্ছে`}</p>
+       <p className='text-gray-500 mb-4 px-2 sm:px-0'>{`মোট ${toBengaliNumber(products.length)} টি পণ্য দেখানো হচ্ছে`}</p>
       <div id='allProduct' className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 justify-between px-2 sm:px-0'>
         {products.map(product=><ProductCard key={product.id} product={product}></ProductCard>)}
       </div>
